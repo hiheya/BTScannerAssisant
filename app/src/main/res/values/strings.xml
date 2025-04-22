@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BT扫描仪Demo</string>
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+</resources>

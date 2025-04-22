@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Switch
+        android:id="@+id/switch_auto_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自动连接已配对设备"
+        android:paddingVertical="8dp"/>
+
+    <Switch
+        android:id="@+id/switch_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接通知"
+        android:paddingVertical="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描超时时间(秒)"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_timeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="60"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/text_timeout_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15秒"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_clear_paired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除所有已配对设备"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
